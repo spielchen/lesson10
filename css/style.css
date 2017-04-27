@@ -51,7 +51,7 @@ button:focus {
   font-size: 5rem;
   color: #ffffff;
 }
-.contant-faicon i {
+#rotate {
   -webkit-transform: rotate(-25deg);
       -ms-transform: rotate(-25deg);
           transform: rotate(-25deg);
