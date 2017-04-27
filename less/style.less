@@ -1,0 +1,130 @@
+/*FONTS MIXINS*/
+.reg{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.semi-bold{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+
+/*COLOR MIXINS*/
+@header-span-color:rgb(252, 103, 68);
+@header-p-color:rgb(65, 65, 65);
+@contant-text:rgb(255, 255, 255);
+@contant-first-box:rgb(78, 178, 247);
+@contant-second-box:rgb(192, 73, 248);
+@contant-third-box:rgb(129, 126, 255);
+@contant-fourth-box:rgb(247, 71, 112);
+
+
+/*basic settings*/
+html{
+	font-size: 10px;
+}
+button:focus{
+	outline: none;
+}
+
+.header{
+	text-align: center;
+	&-main-text{
+		font-size: 5rem;
+		.semi-bold;
+		margin-top: 5rem;
+		margin-bottom: 0;
+		span{
+			color:@header-span-color;
+		}
+	}
+	&-text{
+		font-size: 1.6rem;
+		.reg;
+		color:@header-p-color;
+		margin-bottom: 10rem;
+	}
+}
+.contant{
+	text-align: center;
+	height: 27rem;
+	&:hover{
+		box-shadow: 3px 5px 14px 0px rgba(20, 20, 21, 0.21);
+		&:hover .contant-btn{
+		box-shadow: 3px 5px 14px 0px rgba(20, 20, 21, 0.09);
+	}
+	}
+	&-faicon{
+		margin: 0;
+		padding-top: 2.5rem;
+		font-size: 5rem;
+		color:@contant-text;
+		i{
+			transform:rotate(-25deg);
+		}
+	}
+	&_first-box{
+		background-color:@contant-first-box;
+	}
+	&_second-box{
+		background-color: @contant-second-box;
+	}
+	&_third-box{
+		background-color: @contant-third-box;
+	}
+	&_fourth-box{
+		background-color: @contant-fourth-box;
+	}
+	&-main-text{
+		color:@contant-text;
+		.semi-bold;
+		font-size: 2rem;
+		margin-bottom: 0;
+	}
+	&-text{
+		margin-top: .5rem;
+		padding: 1rem 3rem;
+		color:@contant-text;
+		.reg;
+		font-size: 1.5rem;
+	}
+	&-btn{
+		position:relative;
+		margin-top: 2.5rem;
+		border-radius: 50px;
+		padding: 1.5rem;
+		width: 80%;
+		border:1px solid @contant-text;
+		background-color: @contant-text;
+		box-shadow: 3px 5px 14px 0px rgba(20, 20, 21, 0.05);
+		a{
+			padding-left: 2rem;
+			text-decoration: none;
+			.reg;
+			color: rgba(0, 0, 0, 0.8);
+		}
+	}
+}
+.krest1{
+	top: 50%;
+	transform:translateY(-50%);
+	left: 20%;
+	transform:translateX(-20%);
+	position:absolute;
+	display: inline-block;
+	width: 2rem;
+	height: 1px;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+.krest2{
+	top: 50%;
+	transform:translateY(-50%);
+	left: 18%;
+	transform:translateX(-18%);
+	position: absolute;
+	display: inline-block;
+	width: 2rem;
+	height: 1px;
+	background-color:rgba(0, 0, 0, 0.5);
+	transform:rotate(90deg);
+}
